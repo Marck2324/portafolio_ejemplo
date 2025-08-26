@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portafolio de Marco Antonio Espinoza Rosales - Desarrollador Full Stack">
+  <title>Marco Espinoza | Full Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css  "/>
+
+  <!-- Favicon (opcional) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+
+  <!-- Preloader (opcional) -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="logo">Marco<span>Espinoza</span></a>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre Mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Cambiar tema">
+        <i class="fas fa-moon"></i>
+      </button>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Inicio (Hero) -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Hola, soy <span>Marco Antonio Espinoza Rosales</span></h1>
+      <p class="subtitle">Desarrollador <span class="typewriter"></span></p>
+      <p class="description">Construyo aplicaciones robustas, escalables y modernas con tecnologías de vanguardia.</p>
+      <div class="hero-buttons">
+        <a href="#proyectos" class="btn primary">Ver Proyectos</a>
+        <a href="#contacto" class="btn secondary">Trabajemos Juntos</a>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <a href="#sobre-mi"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- Sección Sobre Mí -->
+  <section id="sobre-mi" class="seccion sobre-mi">
+    <div class="container">
+      <h2 class="section-title">Sobre Mí</h2>
+      <div class="about-content">
+        <div class="about-img">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg  " alt="Marco Espinoza">
+        </div>
+        <div class="about-text">
+          <p>Soy un <strong>desarrollador Full Stack</strong> apasionado por la tecnología, la innovación y la resolución de problemas complejos. Me especializo en el desarrollo de aplicaciones web modernas con <strong>React, Node.js, TypeScript, Python y bases de datos relacionales y NoSQL</strong>.</p>
+          <p>He trabajado en proyectos desde MVPs para startups hasta sistemas empresariales con alto tráfico. Siempre busco mejorar, aprender y crear soluciones que marquen la diferencia.</p>
+          <div class="info-grid">
+            <div class="info-item"><strong>Edad:</strong> 28</div>
+            <div class="info-item"><strong>Ubicación:</strong> México</div>
+            <div class="info-item"><strong>Disponible:</strong> Sí ✅</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Habilidades -->
+  <section id="habilidades" class="seccion habilidades">
+    <div class="container">
+      <h2 class="section-title">Tecnologías & Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-react"></i>
+          <h3>React</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-node-js"></i>
+          <h3>Node.js</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <h3>PostgreSQL</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-server"></i>
+          <h3>Express</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-git-alt"></i>
+          <h3>Git & GitHub</h3>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-code"></i>
+          <h3>TypeScript</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Proyectos -->
+  <section id="proyectos" class="seccion proyectos">
+    <div class="container">
+      <h2 class="section-title">Mis Proyectos Destacados</h2>
+      <div class="proyectos-grid">
+        <div class="proyecto-card" data-aos="fade-up">
+          <img src="https://picsum.photos/seed/project1/600/400  " alt="E-Commerce App">
+          <h3>E-Commerce Full Stack</h3>
+          <p>Plataforma completa con carrito, pagos (Stripe), autenticación JWT y panel de administración.</p>
+          <div class="tech-tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+          <a href="#" class="btn-small">Ver Código</a>
+        </div>
+        <div class="proyecto-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://picsum.photos/seed/project2/600/400  " alt="Task Manager">
+          <h3>TaskFlow</h3>
+          <p>Aplicación de gestión de tareas con drag & drop, notificaciones y sincronización en tiempo real.</p>
+          <div class="tech-tags">
+            <span>Vue.js</span>
+            <span>Socket.io</span>
+            <span>PostgreSQL</span>
+          </div>
+          <a href="#" class="btn-small">Ver Demo</a>
+        </div>
+        <div class="proyecto-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://picsum.photos/seed/project3/600/400  " alt="AI Chatbot">
+          <h3>AI Assistant</h3>
+          <p>Chatbot con IA integrada (OpenAI API) para atención al cliente automatizada.</p>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>React</span>
+          </div>
+          <a href="#" class="btn-small">Ver Proyecto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Experiencia -->
+  <section id="experiencia" class="seccion experiencia">
+    <div class="container">
+      <h2 class="section-title">Experiencia Profesional</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Desarrollador Full Stack</h3>
+          <p class="company">TechNova S.A. – 2022 – Actual</p>
+          <p>Lideré el desarrollo de una plataforma SaaS para gestión de logística. Usé React, Node.js, Docker y AWS. Mejoré el rendimiento en un 40%.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Desarrollador Backend</h3>
+          <p class="company">Innovatech – 2020 – 2022</p>
+          <p>Implementé APIs REST y microservicios con Node.js y Python. Integré sistemas con bases de datos grandes y alta concurrencia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contacto" class="seccion contacto">
+    <div class="container">
+      <h2 class="section-title">Contáctame</h2>
+      <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+      <form id="contact-form" class="contact-form">
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+        <button type="submit" class="btn primary">Enviar Mensaje</button>
+      </form>
+      <div id="form-message"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Marco Antonio Espinoza Rosales. Todos los derechos reservados.</p>
+      <div class="social-links">
+        <a href="https://github.com/Marck2324" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com  " target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com  " target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:marcoespinoza12361@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+</body>
+</html>      
